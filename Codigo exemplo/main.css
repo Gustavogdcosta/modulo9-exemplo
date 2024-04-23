@@ -1,0 +1,102 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+header {
+    background-color: rgb(22, 116, 238);
+    display: flex;
+    align-content: center;
+    padding: 25px 0;
+    border-bottom: 16px solid #5613f1;
+    justify-content: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-size: 50px;
+}
+
+header button {
+    background-color: rgb(26, 177, 26);
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid white;
+}
+
+button:hover {
+    background-color: rgba(44, 226, 44, 0.5);
+    cursor: pointer;
+}
+
+section {
+    background-color: rgb(204, 199, 199);
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 8px;
+    width: 200px;
+}
+
+form button {
+    padding: 8px;
+    background-color: rgb(26, 177, 26);
+    color: white;
+    border: 2px solid white;
+}
+
+#reset-button {
+    background-color: rgb(172, 7, 7);
+}
+
+#reset-button:hover{
+    background-color: rgba(255, 0, 0, 0.548);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+li img{
+    max-width: 100%;
+}
+
+.overlay-link{
+    position: absolute;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.575);
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.overlay-link a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-link{
+    opacity: 1;
+}

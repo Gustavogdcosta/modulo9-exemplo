@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo módulo 9</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+    <h1>Galeria de fotos</h1>
+    <button type="submit">Nova imagem</button>
+  </header>
+  <section>
+    <h2>Inserir nova imagem</h2>
+    <form id="inserindo-imagens">
+      <input type="url" required placeholder="Digite o endereço da imagem" id="img-address">
+      <button type="submit">Adicionar</button>
+      <button type="reset" id="reset-button">Cancelar</button>
+    </form>
+  </section>
+  <ul>
+    <li>
+      <a href="./images/foto1.jpg" target="_blank"> 
+        <img src="./images/foto1.jpg" alt="Pintura de gato" title="Ver imagem em tamanho original"> 
+      </a>
+      <div class="overlay-link">
+        <a href="./images/foto1.jpg" id="botao-img" target="_blank">Ver imagem em tamanho original</a>
+      </div>
+    </li>
+    <li>
+      <a href="./images/foto2.jpg" target="_blank"> 
+        <img src="./images/foto2.jpg" alt="Pintura de gato" title="Ver imagem em tamanho original"> 
+      </a>
+      <div class="overlay-link">
+        <a href="./images/foto2.jpg" id="botao-img" target="_blank">Ver imagem em tamanho original</a>
+      </div>
+    </li>
+    <li>
+      <a href="./images/foto3.jpg" target="_blank"> 
+        <img src="./images/foto3.jpg" alt="Pintura de gato" title="Ver imagem em tamanho original"> 
+      </a>
+      <div class="overlay-link">
+        <a href="./images/foto3.jpg" id="botao-img" target="_blank">Ver imagem em tamanho original</a>
+      </div>
+    </li>
+    <li>
+      <a href="./images/foto4.jpg" target="_blank"> 
+        <img src="./images/foto4.jpg" alt="Pintura de gato" title="Ver imagem em tamanho original"> 
+      </a>
+      <div class="overlay-link">
+        <a href="./images/foto4.jpg" id="botao-img" target="_blank">Ver imagem em tamanho original</a>
+      </div>
+    </li>
+    <li>
+      <a href="./images/foto5.jpg" target="_blank"> 
+        <img src="./images/foto5.jpg" alt="Pintura de gato" title="Ver imagem em tamanho original"> 
+      </a>
+      <div class="overlay-link">
+        <a href="./images/foto5.jpg" id="botao-img" target="_blank">Ver imagem em tamanho original</a>
+      </div>
+    </li>
+  </ul>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
